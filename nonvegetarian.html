@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Vegetarian Recipes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 100px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .recipe {
+            display: flex;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        .image {
+            flex: 1;
+        }
+
+        .details {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        img {
+            height: 300px;
+            width: 400px;
+            object-fit: cover;
+        }
+
+        button {
+            border: 1px solid black;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .ingredients, .instructions {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Non-Vegetarian Recipes</h2>
+
+    <!-- Recipe 1 -->
+    <div class="recipe">
+        <div class="image">
+            <img src="p/Tandoori-Chicken.jpg" alt="Tandoori Chicken">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></B>Tandoori Chicken</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>2 skinless chicken legs with thighs</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1 tablespoon ginger-garlic paste</li>
+                    <li>1 teaspoon red chili powder</li>
+                    <li>1 teaspoon turmeric powder</li>
+                    <li>1 teaspoon garam masala</li>
+                    <li>Juice of 1 lemon</li>
+                    <li>Salt to taste</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>Mix yogurt, ginger-garlic paste, spices, lemon juice, and salt to prepare the marinade.</li>
+                    <li>Marinate the chicken for at least 2 hours (preferably overnight).</li>
+                    <li>Preheat the oven to 375°F (190°C) and bake for 25-30 minutes, turning once halfway through.</li>
+                    <li>Garnish with fresh coriander and serve with a side of green chutney.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recipe 2 -->
+    <div class="recipe">
+        <div class="image">
+            <img src="p/fish curry.jpg" alt="Steamed Fish Curry">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></B> Fish Curry</h1>
+            <button onclick="toggleDetails(this)">Rescipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>2 fillets of white fish (e.g., pomfret or cod)</li>
+                    <li>1 cup coconut milk (light)</li>
+                    <li>1 tablespoon tamarind pulp</li>
+                    <li>1 teaspoon mustard seeds</li>
+                    <li>1 teaspoon turmeric powder</li>
+                    <li>1 teaspoon red chili powder</li>
+                    <li>2 green chilies, slit</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh coriander for garnish</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>Heat a non-stick pan and add mustard seeds. Let them splutter.</li>
+                    <li>Add coconut milk, tamarind pulp, turmeric, chili powder, and green chilies. Simmer for 5 minutes.</li>
+                    <li>Add the fish fillets and cook for 10 minutes on low heat until the fish is tender.</li>
+                    <li>Garnish with fresh coriander and serve with brown rice or quinoa.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recipe 3 -->
+    <div class="recipe">
+        <div class="image">
+            <img src="p/chicken-soup.jpg" alt=" Chicken Soup">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b> Chicken Soup</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>200g chicken breast, shredded</li>
+    <li>4 cups chicken stock (low sodium)</li>
+    <li>1 small onion, finely chopped</li>
+    <li>1 carrot, finely chopped</li>
+    <li>1/2 teaspoon turmeric powder</li>
+    <li>1 teaspoon black pepper</li>
+    <li>1 teaspoon ginger-garlic paste</li>
+    <li>Fresh coriander for garnish</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Heat a pot and sauté onion and ginger-garlic paste until fragrant.</li>
+        <li>Add chicken stock, carrot, turmeric, and black pepper. Bring to a boil.</li>
+        <li>Add shredded chicken and simmer for 10 minutes.</li>
+        <li>Garnish with fresh coriander and serve hot.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <!-- Recipe 4 -->
+    <div class="recipe">
+        <div class="image">
+            <img src="p/Egg-Curry.jpg" alt="Egg Curry">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Egg Curry</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>4 boiled eggs</li>
+    <li>1 onion, finely chopped</li>
+    <li>1 tomato, pureed</li>
+    <li>1 teaspoon ginger-garlic paste</li>
+    <li>1 teaspoon red chili powder</li>
+    <li>1/2 teaspoon turmeric powder</li>
+    <li>1 teaspoon garam masala</li>
+    <li>1 teaspoon olive oil</li>
+    <li>100g paneer, cubed</li>
+    <li>1/2 cup green peas (fresh or frozen)</li>
+    <li>Fresh coriander for garnish</li>
+    <li>Salt to taste</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Heat oil in a pan and sauté onion and ginger-garlic paste until golden brown.</li>
+        <li>Add tomato puree, spices, and cook until oil separates.</li>
+        <li>Add green peas and paneer cubes, and cook for a few minutes until heated through.</li>
+        <li>Add boiled eggs, mix gently, and simmer for 5 minutes.</li>
+        <li>Garnish with fresh coriander and serve with millet roti or brown rice.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <!-- Recipe 5 -->
+    <div class="recipe">
+        <div class="image">
+            <img src="p/Prawns-Masala.jpg " alt="Prawn Masala">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Prawn Masala</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>200g prawns, cleaned</li>
+    <li>1 onion, finely chopped</li>
+    <li>1 tomato, finely chopped</li>
+    <li>1 teaspoon ginger-garlic paste</li>
+    <li>1 teaspoon red chili powder</li>
+    <li>1/2 teaspoon turmeric powder</li>
+    <li>1 teaspoon cumin powder</li>
+    <li>1 teaspoon olive oil</li>
+    <li>Salt to taste</li>
+    <li>Fresh coriander for garnish</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Heat oil in a pan and sauté onion and ginger-garlic paste until golden brown.</li>
+        <li>Add tomatoes, spices, and cook until the mixture thickens.</li>
+        <li>Add prawns and cook for 5-7 minutes until tender.</li>
+        <li>Garnish with fresh coriander and serve with steamed rice.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(button) {
+            const recipeDiv = button.parentElement;
+            const ingredients = recipeDiv.querySelector('.ingredients');
+            const instructions = recipeDiv.querySelector('.instructions');
+
+            // Toggle visibility
+            ingredients.style.display = ingredients.style.display === 'none' ? 'block' : 'none';
+            instructions.style.display = instructions.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Vegetarian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .recipe {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .recipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .column {
+            flex: 1;
+            min-width: 300px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .column h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        ul, ol {
+            text-align: left;
+            padding: 0 5cm;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+       
+
+<button onclick="location.href='recipe-options.html'">Go Back</button>

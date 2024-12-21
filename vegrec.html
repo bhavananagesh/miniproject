@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Recipes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 100px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .recipe {
+            display: flex; /* Use flexbox for layout */
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        .image {
+            flex: 1; /* Allow image to take up one part of the flex container */
+        }
+
+        .details {
+            flex: 2; /* Allow details to take up two parts of the flex container */
+            padding-left: 200px; /* Add some space between image and details */
+        }
+
+        img {
+            height: 300px;
+            width: 400px;
+            object-fit: cover;
+        }
+
+        button {
+            border: 1px solid black;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px; /* Add some space above the button */
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .ingredients, .instructions {
+            display: none; /* Initially hide these sections */
+            margin-top: 10px; /* Add some space above the ingredients and instructions */
+        }
+    </style>
+</head>
+<body>
+    <h2>Vegetarian Recipes</h2>
+
+    <!-- Existing Recipes -->
+    <div class="recipe">
+        <div class="image">
+            <img src="p/Ragi-Dosa.jpg" alt="Ragi Dosa">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Ragi Dosa</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients" style="display: none;">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>1 cup ragi flour (finger millet flour)</li>
+                    <li>1/2 cup rice flour</li>
+                    <li>1/4 cup curd (yogurt)</li>
+                    <li>1 small onion, finely chopped</li>
+                    <li>2-3 green chilies, finely chopped</li>
+                    <li>1/2 tsp cumin seeds</li>
+                    <li>A pinch of asafoetida (hing)</li>
+                    <li>Salt to taste</li>
+                    <li>Water as needed</li>
+                    <li>Oil for cooking</li>
+                </ul>
+            </div>
+            <div class="instructions" style="display: none;">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>In a mixing bowl, combine ragi flour, rice flour, and salt.</li>
+                    <li>Add curd and mix well. Gradually add water to make a smooth batter of pouring consistency.</li>
+                    <li>Stir in chopped onion, green chilies, cumin seeds, and a pinch of asafoetida.</li>
+                    <li>Heat a non-stick pan and lightly grease it with oil.</li>
+                    <li>Pour a ladleful of batter and spread it gently into a thin circle.</li>
+                    <li>Cook on medium heat until the edges start lifting and the dosa turns crisp.</li>
+                    <li>Flip if necessary and cook the other side for a minute.</li>
+                    <li>Serve hot with coconut chutney or sambar.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/vegetable stir fry.jpg" alt="Vegetable Stir Fry">
+
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Vegetable Stir Fry</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+ <div class="ingredients">
+    <strong>Ingredients:</strong>
+    <ul>
+        <li>2 cups mixed vegetables (bell peppers, broccoli, carrots, tomato, onion)</li>
+        <li>1 cup paneer, cubed</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 tablespoon olive oil</li>
+        <li>1 teaspoon garlic, minced</li>
+        <li>Salt and pepper to taste</li>
+        <li>Sesame seeds for garnish (optional)</li>
+    </ul>
+    </div>
+    <div class="instructions">
+        <strong>Instructions:</strong>
+        <ol>
+            <li>Heat olive oil in a pan over medium heat.</li>
+            <li>Add minced garlic and sauté for 1 minute.</li>
+            <li>Add cubed paneer and cook for 2-3 minutes until slightly golden.</li>
+            <li>Add mixed vegetables and stir-fry for 5-7 minutes until tender.</li>
+            <li>Pour in soy sauce, and season with salt and pepper.</li>
+            <li>Cook for another 2 minutes, then serve hot, garnished with sesame seeds.</li>
+        </ol>
+    </div>
+    </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/chickpeas.jpg" alt="Chickpea Salad">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Chickpea Salad</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>1 can chickpeas, drained and rinsed</li>
+    <li>1 tomato, diced</li>
+    <li>1 bell pepper, diced</li>
+    <li>1/4 red onion, finely chopped</li>
+    <li>2 tablespoons olive oil</li>
+    <li>1 tablespoon lemon juice</li>
+    <li>Salt and pepper to taste</li>
+    <li>Fresh parsley for garnish (optional)</li>
+    <li>Fresh coriander (cilantro) for garnish (optional)</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>In a large bowl, combine chickpeas, tomato, bell pepper, and red onion.</li>
+        <li>In a small bowl, whisk together olive oil, lemon juice, salt, and pepper.</li>
+        <li>Pour the dressing over the salad and toss to combine.</li>
+        <li>Garnish with fresh parsley and coriander if desired, and serve chilled.</li>
+    </ol>
+</div>
+  </div>
+  </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/veg-pulao.jpg" alt="Vegetable Pulao">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Vegetable Pulao</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>1 cup basmati rice</li>
+                    <li>1 tablespoon ghee or oil</li>
+                    <li>1 onion, thinly sliced</li>
+                    <li>1/2 cup carrots and beans, chopped</li>
+                    <li>1/2 cup peas</li>
+                    <li>2 green chilies, slit</li>
+                    <li>1 cinnamon stick</li>
+                    <li>2-3 cloves</li>
+                    <li>1 bay leaf</li>
+                    <li>1/2 teaspoon cumin seeds</li>
+                    <li>1/4 teaspoon turmeric powder</li>
+                    <li>1 teaspoon garam masala</li>
+                    <li>2 cups water</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh coriander for garnish</li>
+                </ul>
+                </div>
+                <div class="instructions">
+                    <strong>Instructions:</strong>
+                    <ol>
+                        <li>Wash the rice thoroughly and soak it in water for 15-20 minutes, then drain.</li>
+                        <li>Heat ghee or oil in a large pan. Add cumin seeds, cinnamon stick, cloves, and bay leaf. Sauté for a few seconds.</li>
+                        <li>Add sliced onions and sauté until golden brown.</li>
+                        <li>Add chopped carrots, beans, and peas. Sauté for 2-3 minutes.</li>
+                        <li>Stir in turmeric powder, garam masala, and green chilies.</li>
+                        <li>Add the soaked rice and stir gently to combine with the vegetables and spices.</li>
+                        <li>Pour in water and add salt. Bring to a boil, then cover and reduce the heat to low.</li>
+                        <li>Cook for 15-20 minutes, or until the rice is cooked and water is absorbed.</li>
+                        <li>Garnish with fresh coriander and serve hot.</li>
+                    </ol>
+                </div>
+                </div>
+    </div>
+    <div class="recipe">
+        <div class="image">
+            <img src="p/vegetable curry.jpg" alt="Vegetable Curry">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Vegetable Curry</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>1 tablespoon coconut oil</li>
+    <li>1 onion, chopped</li>
+    <li>2 cloves garlic, minced</li>
+    <li>1 tablespoon ginger, grated</li>
+    <li>2 cups mixed vegetables (carrots, peas, potatoes)</li>
+    <li>1 cup paneer, cubed</li>
+    <li>1 can coconut milk</li>
+    <li>2 tablespoons curry powder</li>
+    <li>Salt to taste</li>
+    <li>Fresh cilantro for garnish (optional)</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Heat coconut oil in a pot over medium heat.</li>
+        <li>Add onion, garlic, and ginger; sauté until onion is translucent.</li>
+        <li>Add mixed vegetables and curry powder; stir to coat.</li>
+        <li>Pour in coconut milk and bring to a simmer.</li>
+        <li>Add the cubed paneer and cook for an additional 10-15 minutes until vegetables are tender and paneer is heated through; season with salt.</li>
+        <li>Garnish with fresh cilantro and serve with rice or naan.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <!-- New Recipes -->
+    <div class="recipe">
+        <div class="image">
+            <img src="p/roasted-vegetable-salad.jpg" alt="Roasted Vegetable Salad">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Roasted Vegetable Salad</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>2 cups mixed vegetables (e.g., bell peppers, zucchini, carrots)</li>
+                    <li>2 cups leafy vegetables (e.g., spinach, kale, or Swiss chard)</li>
+                    <li>2 tablespoons olive oil</li>
+                    <li>2 tablespoons lemon juice</li>
+                    <li>Salt to taste</li>
+                    <li>Pepper to taste</li>
+                </ul>
+                </div>
+                <div class="instructions">
+                    <strong>Instructions:</strong>
+                    <ol>
+                        <li>Preheat oven to 400°F (200°C).</li>
+                        <li>Toss mixed vegetables with olive oil, salt, and pepper.</li>
+                        <li>Spread the mixed vegetables on a baking sheet and roast in the oven for 20-25 minutes or until tender.</li>
+                        <li>In the last 5 minutes of roasting, add the leafy vegetables to the baking sheet to wilt them slightly.</li>
+                        <li>Remove from the oven, mix with lemon juice, and serve.</li>
+                    </ol>
+                </div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/vegetable-khichdi.jpg" alt="Vegetable Khichdi">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Vegetable Khichdi</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>1 cup rice</li>
+                    <li>1/2 cup moong dal</li>
+                    <li>1 cup mixed vegetables (e.g., peas, beans, bell peppers)</li>
+                    <li>1 carrot, chopped</li>
+                    <li>1/4 teaspoon turmeric powder</li>
+                    <li>1/2 teaspoon cumin seeds</li>
+                    <li>1 tablespoon ginger, chopped</li>
+                    <li>Salt to taste</li>
+                    <li>1 tablespoon ghee or olive oil</li>
+                    <li>Fresh coriander, chopped (for garnish)</li>
+                </ul>
+                </div>
+                <div class="instructions">
+                    <strong>Instructions:</strong>
+                    <ol>
+                        <li>Wash rice and moong dal together and soak for 30 minutes.</li>
+                        <li>In a pressure cooker, heat ghee or olive oil and add cumin seeds.</li>
+                        <li>Add chopped ginger, chopped carrot, and mixed vegetables; sauté for a few minutes.</li>
+                        <li>Add soaked rice and dal, turmeric, salt, and enough water.</li>
+                        <li>Cook for 2-3 whistles and let the pressure release naturally before serving.</li>
+                        <li>Garnish with fresh coriander before serving.</li>
+                    </ol>
+                </div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/sama-rice.jpg" alt="Sama Rice">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Sama Rice</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>1 cup sama rice</li>
+    <li>2 cups water</li>
+    <li>Salt to taste</li>
+    <li>1 onion, chopped</li>
+    <li>1 tomato, chopped</li>
+    <li>1/4 cup peas (fresh or frozen)</li>
+    <li>2 tablespoons cashews</li>
+    <li>1-2 green chilies, slit (adjust to taste)</li>
+    <li>8-10 curry leaves</li>
+    <li>1 tablespoon ghee or oil (optional, for sautéing)</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Rinse the sama rice thoroughly and set aside.</li>
+        <li>In a pot, heat ghee or oil (if using) and add the chopped onion, green chilies, and curry leaves. Sauté until the onion is translucent.</li>
+        <li>Add the chopped tomato and peas; cook until the tomato softens.</li>
+        <li>Add the rinsed sama rice, water, and salt. Bring to a boil.</li>
+        <li>Add the cashews, reduce heat to low, cover, and cook until the rice is tender (about 15-20 minutes).</li>
+        <li>Fluff with a fork and serve hot.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/millet-dosa.jpg" alt="Millet Dosa">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Millet Dosa</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>Millet flour</li>
+                    <li>Rice flour</li>
+                    <li>Urad dal flour</li>
+                    <li>Salt</li>
+                    <li>Water</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>Mix millet flour, rice flour, urad dal flour, and salt in a bowl.</li>
+                    <li>Add water gradually to make a smooth batter.</li>
+                    <li>Heat a non-stick pan, pour a ladle of batter, and spread it into a circle.</li>
+                    <li>Cook until golden brown on both sides and serve with chutney.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/jowar-roti.jpg" alt="Jowar Roti">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Jowar Roti</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>Jowar flour</li>
+                    <li>Water</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>In a bowl, mix jowar flour and salt.</li>
+                    <li>Gradually add water to form a soft dough.</li>
+                    <li>Divide the dough into small balls and roll them out into flat discs.</li>
+                    <li>Cook on a hot tava until both sides are cooked and serve hot.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/oats-upma.jpg" alt="Oats Upma">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Oats Upma</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>1 cup oats</li>
+    <li>1 cup mixed vegetables (e.g., carrots, bell peppers, beans)</li>
+    <li>1/2 cup peas (fresh or frozen)</li>
+    <li>1 onion, chopped</li>
+    <li>1-2 green chilies, chopped (adjust to taste)</li>
+    <li>Salt to taste</li>
+    <li>1-2 tablespoons oil</li>
+    <li>Water as needed</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Heat oil in a pan, add chopped onions and green chilies, and sauté until the onions are translucent.</li>
+        <li>Add mixed vegetables and peas; cook for a few minutes until they are tender.</li>
+        <li>Stir in oats and salt, and add water as needed to achieve your desired consistency.</li>
+        <li>Cook until the oats are soft and the mixture is well combined. Serve hot.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/oats-idli.jpg" alt="Oats Idli">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Oats Idli</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>1 cup oats</li>
+    <li>1/2 cup yogurt</li>
+    <li>1/2 cup water (adjust as needed)</li>
+    <li>1/2 teaspoon baking soda</li>
+    <li>Salt to taste</li>
+    <li>1 cup mixed vegetables (e.g., carrots, peas, bell peppers, finely chopped)</li>
+    <li>1/2 cup leafy vegetables (e.g., spinach or fenugreek leaves, chopped)</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Grind oats into a fine powder.</li>
+        <li>In a mixing bowl, combine oats powder, yogurt, water, and salt to form a smooth batter.</li>
+        <li>Add the mixed vegetables and leafy vegetables to the batter. Mix well.</li>
+        <li>Add baking soda and mix until well combined.</li>
+        <li>Pour the batter into idli molds and steam for about 10-15 minutes or until cooked through.</li>
+        <li>Allow to cool slightly before removing from molds. Serve hot with chutney or sambar.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/sprouts-salad.jpg" alt="Sprouts Salad">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Sprouts Salad</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>1 cup mixed sprouts</li>
+    <li>1 cucumber, diced</li>
+    <li>1 tomato, diced</li>
+    <li>1 onion, finely chopped</li>
+    <li>1 carrot, grated</li>
+    <li>1/2 cup pomegranate seeds</li>
+    <li>2 tablespoons fresh coriander leaves, chopped</li>
+    <li>1/4 cup groundnuts (peanuts), roasted and roughly chopped</li>
+    <li>2 tablespoons lemon juice</li>
+    <li>Salt to taste</li>
+    <li>Pepper to taste</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>In a bowl, combine mixed sprouts, cucumber, tomato, onion, grated carrot, pomegranate seeds, and chopped coriander.</li>
+        <li>Add the roasted groundnuts for crunch.</li>
+        <li>Drizzle with lemon juice, and season with salt and pepper.</li>
+        <li>Toss well to combine all ingredients and serve fresh.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/barley-khichdi.jpg" alt="Barley Khichdi">
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Barley Khichdi</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+<ul>
+    <li>1 cup barley</li>
+    <li>1/2 cup moong dal</li>
+    <li>1 onion, finely chopped</li>
+    <li>2 tablespoons ghee</li>
+    <li>Spices (e.g., cumin, turmeric, garam masala, to taste)</li>
+    <li>Salt to taste</li>
+    <li>2 tablespoons fresh coriander leaves, chopped</li>
+</ul>
+</div>
+<div class="instructions">
+    <strong>Instructions:</strong>
+    <ol>
+        <li>Rinse barley and moong dal thoroughly.</li>
+        <li>In a pressure cooker, heat ghee and sauté onions with spices until golden brown.</li>
+        <li>Add barley, moong dal, and water (about 4 cups). Stir well.</li>
+        <li>Cook for a few whistles until the barley and dal are tender.</li>
+        <li>Once done, garnish with fresh coriander and serve hot.</li>
+    </ol>
+</div>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="image">
+            <img src="p/chia-pudding.jpg" alt="Chia Pudding">
+            <a href="https://youtu.be/Hbe9M-SzeH4">Visit Link</a>
+        </div>
+        <div class="details">
+            <h1 class="recipe-name"><b></b>Chia Pudding</h1>
+            <button onclick="toggleDetails(this)">Recipe</button>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    <li>Chia seeds</li>
+                    <li>Almond milk</li>
+                    <li>Sweetener</li>
+                    <li>Vanilla extract</li>
+                    <li>Fruits for topping</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <strong>Instructions:</strong>
+                <ol>
+                    <li>In a bowl, combine chia seeds, almond milk, sweetener, and vanilla extract.</li>
+                    <li> Mix well and let it sit for about 5 minutes.</li>
+                    <li>Stir again to prevent clumping.</li>
+                    <li>Cover and refrigerate for at least 2 hours or overnight to thicken.</li>
+                    <li>Once set, serve chilled, topped with your choice of fruits.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="location.href='recipe-options.html'">Go Back</button>
+    
+    <script>
+        function toggleDetails(button) {
+            const recipeDiv = button.parentElement;
+            const ingredients = recipeDiv.querySelector('.ingredients');
+            const instructions = recipeDiv.querySelector('.instructions');
+
+            // Toggle visibility
+            ingredients.style.display = ingredients.style.display === 'none' ? 'block' : 'none';
+            instructions.style.display = instructions.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

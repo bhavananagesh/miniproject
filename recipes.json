@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "name": "Roasted Vegetable Salad",
+    "ingredients": [
+      "Mixed vegetables",
+      "Olive oil",
+      "Lemon juice",
+      "Salt",
+      "Pepper"
+    ],
+    "instructions": [
+      "Step 1: Preheat oven to 400°F (200°C).",
+      "Step 2: Toss mixed vegetables with olive oil, salt, and pepper.",
+      "Step 3: Roast in the oven for 20-25 minutes or until tender.",
+      "Step 4: Mix with lemon juice and serve."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Vegetable Khichdi",
+    "ingredients": [
+      "Rice",
+      "Moong dal",
+      "Mixed vegetables",
+      "Turmeric powder",
+      "Cumin seeds",
+      "Ginger",
+      "Salt",
+      "Ghee or olive oil"
+    ],
+    "instructions": [
+      "Step 1: Wash rice and moong dal together and soak for 30 minutes.",
+      "Step 2: In a pressure cooker, heat ghee or olive oil and add cumin seeds.",
+      "Step 3: Add chopped ginger and mixed vegetables; sauté for a few minutes.",
+      "Step 4: Add soaked rice and dal, turmeric, salt, and enough water.",
+      "Step 5: Cook for 2-3 whistles and let the pressure release naturally before serving."
+    ]
+  },
+  {
+    "name": "Sama Rice",
+    "ingredients": [
+      "sama rice",
+      "water",
+      "Salt"
+    ],
+    "instructions": [
+      "Step 1: Rinse the sama rice thoroughly.",
+      "Step 2: In a pot, add water and salt, and bring to a boil.",
+      "Step 3: Add the rinsed sama rice, reduce heat to low, cover, and cook until the rice is tender",
+      "Step 4: Fluff with a fork and serve."
+    ]
+  },
+  {
+    "name": "Millet Dosa",
+    "ingredients": [
+      "millet flour",
+      "rice flour",
+      "urad dal flour",
+      "Salt",
+      "Water"
+    ],
+    "instructions": [
+      "Step 1: Mix millet flour, rice flour, urad dal flour, and salt in a bowl.",
+      "Step 2: Add water gradually to make a smooth batter.",
+      "Step 3: Heat a non-stick pan, pour a ladle of batter, and spread it into a circle.",
+      "Step 4: Cook until golden brown on both sides and serve with chutney."
+    ]
+  },
+  {
+    "name": "Jowar Roti",
+    "ingredients": [
+      "jowar flour",
+      "Water",
+      "Salt"
+    ],
+    "instructions": [
+      "Step 1: In a bowl, mix jowar flour and salt.",
+      "Step 2: Gradually add water to form a soft dough.",
+      "Step 3: Divide the dough into small balls and roll them out into flat discs.",
+      "Step 4: Cook on a hot tava until both sides are cooked and serve hot."
+    ]
+  },
+  {
+    "name": "Oats Upma",
+    "ingredients": [
+      "oats",
+      "mixed vegetables",
+      "onion",
+      "green chilies",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Step 1: Heat oil in a pan, add onions and green chilies, and sauté until onions are translucent.",
+      "Step 2: Add mixed vegetables and cook for a few minutes.",
+      "Step 3: Stir in oats and salt, and add water as needed.",
+      "Step 4: Cook until oats are soft and serve hot."
+    ]
+  },
+  {
+    "name": "Oats Idli",
+    "ingredients": [
+      "oats",
+      "yogurt",
+      "water",
+      "baking soda",
+      "Salt"
+    ],
+    "instructions": [
+      "Step 1: Grind oats into a fine powder.",
+      "Step 2: Mix oats powder, yogurt, water, and salt to form a batter.",
+      "Step 3: Add baking soda and mix well.",
+      "Step 4: Pour the batter into idli molds and steam."
+    ]
+  },
+  {
+    "name": "Sprouts Salad",
+    "ingredients": [
+      "mixed sprouts",
+      "cucumber",
+      "tomato",
+      "onion",
+      "Lemon juice",
+      "Salt",
+      "pepper"
+    ],
+    "instructions": [
+      "Step 1: In a bowl, combine mixed sprouts, cucumber, tomato, and onion.",
+      "Step 2: Drizzle with lemon juice, and season with salt and pepper.",
+      "Step 3: Toss well and serve fresh."
+    ]
+  },
+  {
+    "name": "Barley Khichdi",
+    "ingredients": [
+      "barley",
+      "moong dal",
+      "onion",
+      "tomato",
+      "Spices",
+      "Salt"
+    ],
+    "instructions": [
+      "Step 1: Rinse barley and moong dal thoroughly.",
+      "Step 2: In a pressure cooker, sauté onions and tomatoes with spices.",
+      "Step 3: Add barley, moong dal, and water.",
+      "Step 4: Cook for a few whistles and serve hot."
+    ]
+  },
+  {
+    "name": "Chia Pudding",
+    "ingredients": [
+      "chia seeds", 
+      "almond milk",
+      "sweetener",
+      "vanilla extract",
+      "fruits for topping"
+    ],
+    "instructions": [
+      "Step 1: In a bowl, combine chia seeds, almond milk, sweetener, and vanilla extract.",
+      "Step 2: Mix well and let it sit for about 5 minutes.",
+      "Step 3: Stir again to prevent clumping.",
+      "Step 4: Cover and refrigerate for at least 2 hours or overnight to thicken.",
+      "Step 5: Once set, serve chilled, topped with your choice of fruits."
+    ]
+  }
+]
+   

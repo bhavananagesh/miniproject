@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 70vh; /* Full screen height */
+            display: center; /* Flexbox for centering content */
+            justify-content: center; /* Horizontal centering */
+            align-items: center; /* Vertical centering */
+            background-image: url('p/venve.jpg'); /* Replace 'venve.jpg' with your image file name or URL */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents tiling of the image */
+            background-position: center; /* Centers the image */
+            color: rgb(7, 6, 6); /* Text color for contrast against the background */
+        }
+        .container {
+            text-align: center;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        button {
+            padding: 20px 40px;
+            margin: 0 20px;
+            cursor: pointer;
+            border: 1px solid #333;
+            color: white; /* Text color for contrast */
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        button:hover {
+            opacity: 0.9; /* Slight fade effect on hover */
+        }
+        .veg-button {
+            background-color: green;
+        }
+        .nonveg-button {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recipes</h1>
+        <div class="buttons">
+            <button class="veg-button" onclick="redirectTo('vegrec.html')">Vegetarian</button>
+            <button class="nonveg-button" onclick="redirectTo('nonvegetarian.html')">Non-Vegetarian</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(page) {
+            window.location.href = page; // Redirects to the specified page
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Options</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Makes the body height full screen */
+            background-image: url('p/ingredients_background.jpg'); /* Replace 'find-img.jpg' with your image path */
+            background-size: cover; /* Ensures the image covers the full screen */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            height: 50%; /* Ensures container takes up the full screen */
+            display: cent; /* Centers content vertically and horizontally */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 20px;
+            font-size: 16px;
+            background-color: #e9bc67;
+            border: 5px solid #cccccc;
+            border-radius: 120%; /* Makes the button circular */
+            cursor: pointer;
+            width: 200px; /* Sets the width of the circular button */
+            height: 250px; /* Sets the height of the circular button */
+            box-shadow: 2px 2px 4px rgba(115, 111, 111, 0.2);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Recipe by</h1>
+        <button onclick="location.href='ingredients-input.html'">Ingredients</button>
+        <button onclick="location.href='dietary-options.html'">Dietary Options</button>
+        <div id="recipeList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Vegetarian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .recipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .column {
+            flex: 1;
+            min-width: 300px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .column h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        ul, ol {
+            text-align: left;
+            padding: 0 20px;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Non-Vegetarian Recipe</h1>
+    <div class="recipe-container">
+        <!-- Ingredients Section -->
+        <div class="column">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>500g chicken breast, diced</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tsp salt</li>
+                <li>1 tsp black pepper</li>
+                <li>1 tsp paprika</li>
+                <li>2 cloves garlic, minced</li>
+            </ul>
+        </div>
+        <!-- Instructions Section -->
+        <div class="column">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Heat olive oil in a large pan over medium heat.</li>
+                <li>Add minced garlic and sauté for 1 minute.</li>
+                <li>Stir in diced chicken and cook until browned, about 5-7 minutes.</li>
+                <li>Sprinkle salt, pepper, and paprika over the chicken.</li>
+                <li>Cook for another 10 minutes until chicken is fully cooked.</li>
+                <li>Serve hot with your choice of sides!</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

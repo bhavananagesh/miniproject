@@ -1,0 +1,62 @@
+/* Apply the background image to the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('p/login page image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: hsl(0, 100%, 98%); /* Adjust text color for visibility */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the container */
+.container {
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background for contrast */
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form styles */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#loginForm input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#loginForm button {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4eda61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginForm button:hover {
+    background-color: #61c963;
+}
+
+#loginForm p {
+    margin-top: 10px;
+}
+
+#loginForm a {
+    color: #d01818;
+    text-decoration: none;
+}
+
+#loginForm a:hover {
+    text-decoration: underline;
+}
